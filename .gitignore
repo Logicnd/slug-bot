@@ -1,0 +1,33 @@
+# Ignore node modules
+node_modules/
+
+# Ignore compiled output
+dist/
+build/
+
+# Ignore environment variables
+.env
+.env.local
+.env.*.local
+
+# Ignore log files
+*.log
+*.log.*
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore economy data
+data.json
+data.json.tmp
+
+# Ignore build output
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.7z
