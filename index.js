@@ -3,7 +3,21 @@ const fs = require("fs");
 const path = require("path");
 const { Client, Collection, GatewayIntentBits } = require("discord.js");
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const INTENTS = [
+  GatewayIntentBits.Guilds,
+  GatewayIntentBits.GuildMessages,
+  GatewayIntentBits.GuildMembers,
+];
+
+const invalid = INTENTS.filter((i) => i === undefined || i === null);
+if (invalid.length) {
+  console.error(
+    `[ERROR] ${invalid.length} intent(s) resolved to undefined — check your discord.js version.`
+  );
+  process.exit(1);
+}
+
+const client = new Client({ intents: INTENTS });
 
 client.commands = new Collection();
 

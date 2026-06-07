@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "predev": "npm install --no-audit --no-fund && node deploy-commands.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,9 +15,7 @@
   "type": "commonjs",
   "dependencies": {
     "discord.js": "^14.26.4",
-    "dotenv": "^17.4.2",
-    "@discordjs/rest": "^1.2.0",
-    "discord-api-types": "^0.37.17"
+    "dotenv": "^17.4.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
