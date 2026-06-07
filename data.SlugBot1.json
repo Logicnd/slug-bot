@@ -1,0 +1,158 @@
+{
+  "1001540373623087204": {
+    "coins": 7871,
+    "goop": 0,
+    "level": 2,
+    "xp": 5,
+    "jobs": {
+      "selected": "hunter"
+    },
+    "items": {
+      "slimes": 0
+    },
+    "slimes": [
+      {
+        "uid": "375f0eb135c4b618",
+        "speciesId": "basic_slug",
+        "rarityId": "common",
+        "visualId": "normal",
+        "sizeId": "normal",
+        "level": 1,
+        "xp": 0,
+        "nickname": "Sluggy",
+        "createdAt": 1780846743922,
+        "stats": {
+          "hp": 88,
+          "damage": 9
+        },
+        "displayName": "\"Sluggy\" (Basic Slug)",
+        "displayColor": "#9ca3af",
+        "emojiKey": "slime",
+        "power": 124
+      },
+      {
+        "uid": "407589653e1a2293",
+        "speciesId": "basic_slug",
+        "rarityId": "common",
+        "visualId": "normal",
+        "sizeId": "normal",
+        "level": 1,
+        "xp": 0,
+        "nickname": "Sluggy",
+        "createdAt": 1780846924487,
+        "stats": {
+          "hp": 88,
+          "damage": 9
+        },
+        "displayName": "\"Sluggy\" (Basic Slug)",
+        "displayColor": "#9ca3af",
+        "emojiKey": "slime",
+        "power": 124
+      },
+      {
+        "uid": "c5346e7442a42682",
+        "speciesId": "nooby_slime",
+        "rarityId": "common",
+        "visualId": "normal",
+        "sizeId": "normal",
+        "level": 1,
+        "xp": 0,
+        "nickname": "Sluggy",
+        "createdAt": 1780846929628,
+        "stats": {
+          "hp": 60,
+          "damage": 5
+        },
+        "displayName": "\"Sluggy\" (Nooby Slime)",
+        "displayColor": "#9ca3af",
+        "emojiKey": "slime",
+        "power": 76
+      }
+    ],
+    "selectedSlimeId": "375f0eb135c4b618",
+    "activeEffects": {
+      "slimeShieldCharges": 0,
+      "expBoostExpires": 0
+    },
+    "variants": [],
+    "lastDaily": 1780847138750,
+    "lastWork": {},
+    "lastAttack": 1780848342967,
+    "lastArena": 0,
+    "lastHug": 0,
+    "rebirths": 0,
+    "quests": {
+      "lastRefresh": 1780846701366,
+      "current": [
+        {
+          "id": "daily_work",
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        {
+          "id": "daily_hug",
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        {
+          "id": "daily_gamble",
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      ]
+    }
+  },
+  "1228021838852919376": {
+    "coins": 1146,
+    "goop": 0,
+    "level": 2,
+    "xp": 42,
+    "jobs": {
+      "selected": "miner"
+    },
+    "items": {
+      "slimes": 0
+    },
+    "slimes": [],
+    "selectedSlimeId": null,
+    "activeEffects": {
+      "slimeShieldCharges": 0,
+      "expBoostExpires": 0
+    },
+    "variants": [],
+    "lastDaily": 1780847075532,
+    "lastWork": {
+      "miner": 1780846910364
+    },
+    "lastAttack": 1780847733473,
+    "lastArena": 0,
+    "lastHug": 1780847245771,
+    "rebirths": 0,
+    "quests": {
+      "lastRefresh": 1780846828245,
+      "current": [
+        {
+          "id": "daily_hug",
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        {
+          "id": "daily_work",
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        {
+          "id": "daily_gamble",
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      ]
+    }
+  }
+}

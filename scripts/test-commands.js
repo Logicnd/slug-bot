@@ -20,6 +20,10 @@ class MockInteraction {
     console.log('[reply]', payload && (payload.content || (payload.embeds ? '<embed>' : JSON.stringify(payload))));
   }
 
+  async editReply(payload) {
+    console.log('[editReply]', payload && (payload.content || (payload.embeds ? '<embed>' : JSON.stringify(payload))));
+  }
+
   async followUp(payload) {
     console.log('[followUp]', payload && (payload.content || (payload.embeds ? '<embed>' : JSON.stringify(payload))));
   }
@@ -29,10 +33,11 @@ async function run() {
   console.log('Using DATA_PATH:', economy.DATA_PATH);
 
   // ensure test user exists
-  economy.setUser('test-user', { money: 100, goop: 5, jobs: { selected: null }, items: { slimes: 0 } });
+  economy.setUser('test-user', { coins: 5000, goop: 100, rebirths: 1 });
 
   const cmds = [
-    { name: 'search', path: '../src/commands/economy/search' },
+    { name: 'events', path: '../src/commands/economy/events' },
+    { name: 'multipliers', path: '../src/commands/economy/multipliers' },
     { name: 'attack', path: '../src/commands/economy/attack' },
     { name: 'work', path: '../src/commands/economy/work' },
     { name: 'leaderboard', path: '../src/commands/economy/leaderboard', opts: { metric: 'coins' } },

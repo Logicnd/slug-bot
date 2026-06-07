@@ -20,7 +20,7 @@ module.exports = {
     setUser(interaction.user.id, {
        goop: (Number(user.goop) || 0) - config.REBIRTH.THRESHOLD_GOOP,
        rebirths: newRebirths,
-       money: (Number(user.money) || 0) + config.REBIRTH.REBIRTH_BONUS_COINS
+       coins: (Number(user.coins) || 0) + config.REBIRTH.REBIRTH_BONUS_COINS
      });
  
      const embed = simple({ title: "Rebirth Complete", description: `You rebirthed and received **${config.REBIRTH.REBIRTH_BONUS_COINS.toLocaleString()} coins**. Rebirths: ${newRebirths}`, color: COLORS.SUCCESS });

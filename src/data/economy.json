@@ -1,0 +1,136 @@
+{
+  "users": {
+    "1001540373623087204": {
+      "userId": "1001540373623087204",
+      "coins": 19500,
+      "goop": 0,
+      "xp": 0,
+      "level": 1,
+      "rebirths": 0,
+      "lastDaily": 0,
+      "lastHug": 0,
+      "jobs": {
+        "selected": "miner",
+        "lastWorked": {}
+      },
+      "selectedJob": "miner",
+      "items": {},
+      "inventory": [],
+      "slimes": [
+        {
+          "uid": "ece620f7bc6cc821",
+          "speciesId": "ice_slug",
+          "rarityId": "common",
+          "visualId": "normal",
+          "sizeId": "normal",
+          "level": 1,
+          "xp": 0,
+          "nickname": "Sluggy",
+          "createdAt": 1780851539205,
+          "stats": {
+            "hp": 46,
+            "damage": 7
+          },
+          "displayName": "\"Sluggy\" (Ice Slug)",
+          "displayColor": "#9ca3af",
+          "emojiKey": "slime",
+          "power": 83
+        }
+      ],
+      "selectedSlimeId": "ece620f7bc6cc821",
+      "boosts": {
+        "xpBoostUntil": 0
+      },
+      "shields": {
+        "charges": 0
+      },
+      "variants": [],
+      "attack": {
+        "lastAt": 1780851587286
+      },
+      "arena": {
+        "lastAt": 0
+      },
+      "quests": {
+        "date": "2026-06-07",
+        "current": [
+          {
+            "id": "daily_gamble",
+            "type": "gamble",
+            "progress": 0,
+            "goal": 5,
+            "completed": false,
+            "claimed": false
+          },
+          {
+            "id": "daily_work",
+            "type": "work",
+            "progress": 0,
+            "goal": 2,
+            "completed": false,
+            "claimed": false
+          },
+          {
+            "id": "daily_hug",
+            "type": "hug",
+            "progress": 0,
+            "goal": 3,
+            "completed": false,
+            "claimed": false
+          }
+        ]
+      },
+      "stats": {
+        "interactions": 9,
+        "commandsUsed": 0,
+        "totalCoinsEarned": 20000,
+        "totalCoinsSpent": 1000,
+        "totalGoopEarned": 0,
+        "totalGoopSpent": 0
+      },
+      "createdAt": 1780851400230,
+      "updatedAt": 1780851587287
+    }
+  },
+  "guilds": {
+    "1503850356248023120": {
+      "guildId": "1503850356248023120",
+      "users": {
+        "1001540373623087204": true
+      },
+      "interactions": {
+        "1001540373623087204": 9
+      },
+      "createdAt": 1780851400232,
+      "updatedAt": 1780851585709
+    }
+  },
+  "events": {
+    "active": []
+  },
+  "shop": {
+    "dateKey": "2026-06-07",
+    "stock": [
+      {
+        "id": "slime_shield",
+        "name": "Slime Shield",
+        "price": 1500,
+        "type": "consumable",
+        "uses": 5,
+        "description": "Protects your slimes from attacks."
+      },
+      {
+        "id": "exp_boost",
+        "name": "XP Boost",
+        "price": 2000,
+        "type": "consumable",
+        "duration_ms": 7200000,
+        "description": "Double XP for 2 hours."
+      }
+    ]
+  },
+  "meta": {
+    "createdAt": 1780851388926,
+    "updatedAt": 1780851587444
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "999999999999999999": {
+    "coins": 1000,
+    "goop": 100,
+    "level": 3,
+    "xp": 40,
+    "jobs": {
+      "selected": null
+    },
+    "items": {
+      "slimes": 0,
+      "lucky_charm": 1
+    },
+    "slimes": [
+      {
+        "uid": "b18102ccc8fabc04",
+        "speciesId": "toxic_slime",
+        "rarityId": "common",
+        "visualId": "normal",
+        "sizeId": "normal",
+        "level": 1,
+        "xp": 0,
+        "nickname": null,
+        "createdAt": 1780834331890,
+        "stats": {
+          "hp": 40,
+          "damage": 9
+        },
+        "displayName": "Toxic Slime",
+        "displayColor": "#9ca3af",
+        "emojiKey": "slime",
+        "power": 96
+      },
+      {
+        "uid": "1d459c02dc170e20",
+        "speciesId": "fire_slime",
+        "rarityId": "common",
+        "visualId": "normal",
+        "sizeId": "normal",
+        "level": 1,
+        "xp": 0,
+        "nickname": null,
+        "createdAt": 1780834331890,
+        "stats": {
+          "hp": 42,
+          "damage": 8
+        },
+        "displayName": "Fire Slime",
+        "displayColor": "#9ca3af",
+        "emojiKey": "slime",
+        "power": 89
+      },
+      {
+        "uid": "8288f26cf5531468",
+        "speciesId": "green_slime",
+        "rarityId": "common",
+        "visualId": "normal",
+        "sizeId": "normal",
+        "level": 1,
+        "xp": 0,
+        "nickname": null,
+        "createdAt": 1780834331891,
+        "stats": {
+          "hp": 35,
+          "damage": 6
+        },
+        "displayName": "Green Slime",
+        "displayColor": "#9ca3af",
+        "emojiKey": "slime",
+        "power": 69
+      },
+      {
+        "uid": "bd8a65c7d4a4a7eb",
+        "speciesId": "fire_slime",
+        "rarityId": "common",
+        "visualId": "normal",
+        "sizeId": "normal",
+        "level": 1,
+        "xp": 0,
+        "nickname": null,
+        "createdAt": 1780834331892,
+        "stats": {
+          "hp": 42,
+          "damage": 8
+        },
+        "displayName": "Fire Slime",
+        "displayColor": "#9ca3af",
+        "emojiKey": "slime",
+        "power": 89
+      }
+    ],
+    "selectedSlimeId": null,
+    "activeEffects": {
+      "slimeShieldCharges": 0,
+      "expBoostExpires": 0
+    },
+    "variants": [],
+    "lastDaily": 0,
+    "lastWork": {},
+    "lastAttack": 0,
+    "lastArena": 0,
+    "lastHug": 0,
+    "rebirths": 0,
+    "quests": {
+      "lastRefresh": 1780834331897,
+      "current": [
+        {
+          "id": "hug_friends",
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        {
+          "id": "evolve_slime",
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        {
+          "id": "attack_slimes",
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      ]
+    }
+  }
+}

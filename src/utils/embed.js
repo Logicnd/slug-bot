@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require("discord.js");
+const config = require("../../config");
 
 const COLORS = {
   SUCCESS: 0x57f287,
@@ -9,6 +10,7 @@ const COLORS = {
 };
 
 function createEmbed({
+  type,
   title,
   description,
   color = COLORS.INFO,
@@ -18,9 +20,29 @@ function createEmbed({
   footer,
   timestamp = true,
 }) {
-  const embed = new EmbedBuilder().setColor(color);
+  const icons = (config && config.ICONS) || {};
+  const typeToColor = {
+    success: COLORS.SUCCESS,
+    error: COLORS.ERROR,
+    warning: COLORS.WARNING,
+    info: COLORS.INFO,
+    neutral: COLORS.NEUTRAL,
+  };
 
-  if (title) embed.setTitle(title);
+  const resolvedColor = type && typeToColor[type] ? typeToColor[type] : color;
+  const embed = new EmbedBuilder().setColor(resolvedColor);
+
+  if (title) {
+    const prefix =
+      type === "success"
+        ? icons.SUCCESS
+        : type === "error"
+          ? icons.ERROR
+          : type === "warning"
+            ? icons.WARNING
+            : "";
+    embed.setTitle(prefix ? `${prefix} ${title}` : title);
+  }
 
   if (description) embed.setDescription(description);
 
@@ -30,7 +52,8 @@ function createEmbed({
 
   if (fields.length) embed.addFields(fields);
 
-  if (footer) embed.setFooter(footer);
+  if (footer) embed.setFooter(typeof footer === "string" ? { text: footer } : footer);
+  else embed.setFooter({ text: "SlugBot" });
 
   if (timestamp) embed.setTimestamp();
 
@@ -39,6 +62,7 @@ function createEmbed({
 
 function success(options = {}) {
   return createEmbed({
+    type: "success",
     color: COLORS.SUCCESS,
     ...options,
   });
@@ -46,6 +70,7 @@ function success(options = {}) {
 
 function error(options = {}) {
   return createEmbed({
+    type: "error",
     color: COLORS.ERROR,
     ...options,
   });
@@ -53,6 +78,7 @@ function error(options = {}) {
 
 function warning(options = {}) {
   return createEmbed({
+    type: "warning",
     color: COLORS.WARNING,
     ...options,
   });
@@ -60,6 +86,7 @@ function warning(options = {}) {
 
 function info(options = {}) {
   return createEmbed({
+    type: "info",
     color: COLORS.INFO,
     ...options,
   });

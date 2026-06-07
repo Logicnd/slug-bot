@@ -6,6 +6,8 @@
   "scripts": {
     "predev": "npm install --no-audit --no-fund && node deploy-commands.js",
     "dev": "nodemon index.js",
+    "start": "node index.js",
+    "pm2": "pm2 start ecosystem.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

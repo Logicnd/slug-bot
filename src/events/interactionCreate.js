@@ -1,10 +1,16 @@
 const { Events, MessageFlags } = require("discord.js");
 const { error } = require("../utils/embed");
+const { recordInteraction } = require("../utils/economy");
 
 module.exports = {
   name: Events.InteractionCreate,
   async execute(interaction) {
     if (!interaction.isChatInputCommand()) return;
+
+    // Record interaction for per-server leaderboard tracking without privileged intents
+    if (interaction.guildId) {
+      recordInteraction(interaction.user.id, interaction.guildId);
+    }
 
     const { client } = interaction;
     const command = client.commands.get(interaction.commandName);

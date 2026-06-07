@@ -14,14 +14,14 @@ module.exports = {
 
     const slimes = (user.items && Number(user.items.slimes)) || 0;
     const embed = simple({
-      title: `${interaction.user.username}'s Resources`,
+      title: `${config.ICONS.STATS} ${interaction.user.username}'s Resources`,
       description: "Here's a quick look at your current stash.",
       color: COLORS.NEUTRAL,
       fields: [
-        { name: `${config.ICONS.COIN} Coins`, value: `**${Number(user.money).toLocaleString()}**`, inline: true },
+        { name: `${config.ICONS.COIN} Coins`, value: `**${Number(user.coins).toLocaleString()}**`, inline: true },
         { name: `${config.ICONS.GOOP} Goop`, value: `**${Number(user.goop).toLocaleString()}**`, inline: true },
         { name: `${config.ICONS.SLIME} Slimes`, value: `**${slimes.toLocaleString()}**`, inline: true },
-        { name: "Current Job", value: job ? `**${job.name}**` : "*Unemployed*", inline: true },
+        { name: `${config.ICONS.JOB} Current Job`, value: job ? `**${job.name}**` : "*Unemployed*", inline: true },
       ],
     });
 

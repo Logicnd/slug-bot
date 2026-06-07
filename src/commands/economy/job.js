@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require("discord.js");
+const { SlashCommandBuilder, MessageFlags } = require("discord.js");
 const { simple, error, COLORS } = require("../../utils/embed");
 const { listJobs, getJob } = require("../../utils/jobs");
 const { setJob, getUser } = require("../../utils/economy");
